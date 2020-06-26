@@ -4,8 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "postinstall": "npm --prefix client install",
-    "build": "npm --prefix client run build",
     "start": "node app.js",
     "server": "nodemon app.js",
     "client": "npm start --prefix client",
