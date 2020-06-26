@@ -9,7 +9,7 @@
     "client": "npm start --prefix client",
     "clientinstall": "npm install --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "NPM_CONFIG_PRODUCTION=false npm clientinstall && npm run build --prefix client"
+    "build": "NPM_CONFIG_PRODUCTION=false npm run clientinstall && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
