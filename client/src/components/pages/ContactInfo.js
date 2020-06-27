@@ -66,10 +66,10 @@ const ContactInfo = (props) => {
     }
 
     return (
-        <div className="appContainer contactContainer" style={styles}>
+        <div className="appContainer contactContainer">
           <div className="logo_container"></div>
             <h3 className="contactTitle">Free Instant Estimate</h3>
-       <form className="contactForm" onSubmit={onSubmit}>
+       <form className="contactForm" onSubmit={onSubmit}  style={styles}>
          <h4 className="infoTitle">Contact Information</h4>
   <div className="form-row">
     <div className="form-group col-md-6">
