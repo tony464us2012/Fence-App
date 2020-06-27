@@ -16,7 +16,7 @@ router.get('/', auth, async (req, res) => {
     }
 });
 
-router.post('/', auth, async (req, res) => {
+router.post('/', async (req, res) => {
 
 
     const { chainlink4, chainlink5, chainlink6, 
