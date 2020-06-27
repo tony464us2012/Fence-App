@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer')
 
 
 
-router.get('/', async (req, res) => {
+router.get('/', auth, async (req, res) => {
     try {
         const setup = await Setup.findById('5edc128b2d2abd5c18ba6baf');
         res.json(setup);
@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
 
 
     const { chainlink4, chainlink5, chainlink6, 
