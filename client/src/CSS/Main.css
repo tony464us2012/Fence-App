@@ -129,7 +129,7 @@ form img {
     height: 100vh
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 2000px) {
     .appContainer {
         height: 100vh
     }
