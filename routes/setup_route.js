@@ -62,7 +62,7 @@ router.post('/', async (req, res) => {
         let transport = nodemailer.createTransport({
             service: "gmail",
             port: 465,
-            secure: 'true',
+            secure: true,
             auth: {
                 user: 'fencekingsbusiness@gmail.com',
                 pass: 'fencekings9788'
