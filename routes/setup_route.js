@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer')
 
 
 
-router.get('/', auth, async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const setup = await Setup.findById('5edc128b2d2abd5c18ba6baf');
         res.json(setup);
@@ -475,7 +475,7 @@ router.post('/', async (req, res) => {
 
 })
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', auth, async (req, res) => {
   
     try {
         let setup = await Setup.findByIdAndUpdate(req.params.id, { $set: req.body }, { new: true });

@@ -60,9 +60,13 @@ const ContactInfo = (props) => {
 
     const onChange = (e) =>{
         setContact({...contact, [e.target.name]: e.target.value});};
+    
+    const styles= {
+      margin: '1rem'
+    }
 
     return (
-        <div className="appContainer contactContainer">
+        <div className="appContainer contactContainer" style={styles}>
           <div className="logo_container"></div>
             <h3 className="contactTitle">Free Instant Estimate</h3>
        <form className="contactForm" onSubmit={onSubmit}>
