@@ -17,7 +17,7 @@ const UpdateSuccess = (props) => {
      };
     
     return (
-        <div className="setupContainer" >
+        <div className="setupContainer successContainer" >
             <div className="setup_logo"></div>
             <form id="setupForm" style={styles}>
             <h2 className="success-title">Successfully updated</h2>

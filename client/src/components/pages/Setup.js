@@ -1,15 +1,19 @@
-import React, { useState, useContext, useEffect, Fragment } from 'react'
-import SetupContext from '../context/setup/setupContext'
+import React, { useState, useContext, useEffect, Fragment } from 'react';
+import SetupContext from '../context/setup/setupContext';
+import AuthContext from '../context/auth/authContext'
 import axios from 'axios'
 import Spinner from '../layout/Spinner'
 
 const Setup = (props) => {
   
   const setupContext = useContext(SetupContext);
+  const { updateSetup } = setupContext;
+
+  const authContext = useContext(AuthContext);
+  const { logout } = authContext;
 
   
-  const { updateSetup } = setupContext;
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
   const [prices, setPrices] = useState({
     _id: '', 
     chainlink4: '', chainlink5: '', chainlink6: '', 
@@ -63,7 +67,8 @@ const Setup = (props) => {
   const onSubmit = async (e) => {
    e.preventDefault();
     updateSetup(prices);
-    props.history.push('/successupdate')
+    props.history.push('/successupdate');
+    logout()
   };
   
   const styles= {

@@ -35,7 +35,7 @@ const Main = (props) => {
         <div className="appContainer contactContainer">
         <form className="contactForm" onSubmit={onSubmit}>
                 <h4>Fence Information</h4>
-                <h5>Type Of Fence</h5>
+                <h5 className="typeTitle">Type Of Fence</h5>
                     <div className="fenceGrid">
                         <div className="gridItem">
                             <input type="radio" id="chainlink" name="type" onChange={onChange} value="chainlink" checked={ type === "chainlink" }/> 

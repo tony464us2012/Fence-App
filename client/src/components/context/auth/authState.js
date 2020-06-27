@@ -55,7 +55,7 @@ const AuthState = props => {
     
             try{
               const res = await axios.post('/api/login', user, config);
-              const token = res;
+              const token = res.data;
                 dispatch({ type: LOGIN_SUCCESS, payload: token})
             } catch (err){
                 dispatch({

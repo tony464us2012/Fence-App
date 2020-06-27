@@ -18,7 +18,7 @@ const Register = (props) => {
 
     useEffect(()=> {
         if (isAuthenticated) {
-          props.history.push('./dashboard');
+          props.history.push('./setup');
           // eslint-disable-next-line
        }}, [isAuthenticated]);
     

@@ -29,7 +29,7 @@ router.post('/', [
     });
     try{
     const savedUser = await user.save();
-    const token = jwt.sign({_id: savedUser._id}, config.get('TOKEN_SECRET'));
+    const token = jwt.sign({_id: savedUser._id}, config.get('TOKEN_SECRET'), {expiresIn: 10800});
     res.send(token);
    }catch (err)  {
        res.status(400).send(err)

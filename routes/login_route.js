@@ -22,9 +22,12 @@ router.post('/', [
 
      const validPass = await bcrypt.compare(password, user.password);
      if(!validPass) return res.status(400).send('Invalid Password');
-    
-     const token = jwt.sign({_id: user._id}, config.get('TOKEN_SECRET'));
-     res.send(token);
+
+  jwt.sign({_id: user._id}, config.get('TOKEN_SECRET'), {expiresIn: 10800},
+  (err, token) => {
+      if(err) throw err;
+      res.send( token );
+  });
     }
      catch (err) {console.log(err)}
       })

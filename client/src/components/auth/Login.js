@@ -28,15 +28,7 @@ const Login = (props) => {
 
     const onSubmit = async (e) => {
        e.preventDefault();
-  //      if(email === '' || password === '') {
-  //       console.log('Please fill in all fields', 'danger')
-  //   } else{
-  //       login({
-  //      email,
-  //      password
-  //  })
-  // }
-  props.history.push('./setup');
+        login(user)
     };
     
     return (

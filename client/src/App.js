@@ -8,17 +8,17 @@ import Main from './components/pages/Main';
 import Setup from './components/pages/Setup';
 import Estimate from './components/pages/Estimate';
 import SuccessUpdate from './components/pages/UpdateSuccess';
-// import PrivateRoute from './components/routes/PrivateRoute';
-// import setAuthToken from './components/utils/setAuthToken';
+import PrivateRoute from './components/routes/PrivateRoute';
+import setAuthToken from './components/utils/setAuthToken';
 import ContactInfo from './components/pages/ContactInfo';
 import 'bootstrap/dist/css/bootstrap.css';
 import './CSS/Main.css'
-// import SetupContext from './components/context/setup/setupContext'
 
+if(localStorage.token) {
+  setAuthToken(localStorage.token)
+}
 
 function App() {
- 
-
 
   return (
     <AuthState>
@@ -29,7 +29,7 @@ function App() {
             <Route path='/info' exact component={Main} />
             <Route path='/estimate' exact component={Estimate} />
             <Route path='/login' exact component={Login} />
-            <Route path='/setup' exact component={Setup} />
+            <PrivateRoute path='/setup' exact component={Setup} />
             <Route path='/register' exact component={Register} />
             <Route path='/successupdate' exact component={SuccessUpdate} />
           </Switch>
