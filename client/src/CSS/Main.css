@@ -1,0 +1,169 @@
+.appContainer {
+    width: 100vw;
+    height: 100%;
+    padding: 1rem
+}
+.contactContainer{
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(../Assests/fence-72864.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    text-align: center;
+}
+.contactForm {
+    background-color: rgb(243, 228, 184);
+    padding: 2.5rem 3rem;
+    width: 50%;
+    margin: 3rem auto 0;
+    opacity: 1;
+    border-radius: 10px;
+    max-width: 45rem
+}
+form h3 {
+    text-align: center
+}
+form h5 {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-top: .8rem
+}
+
+form h6 {
+    margin-top: .8rem;
+}
+
+#height {
+    height: 32px;
+}
+
+#footage {
+    width: 125px;
+    height: 32px
+}
+
+
+input[type="radio"], 
+input[type="number"] {
+    display: inline-flex;
+    margin-right: .3rem
+}
+input[type="number"] {
+    width: 120px
+}
+input[type="submit"], .previous-btn {
+    margin: 1rem auto !important;
+    width: 125px
+}
+#footage {
+    padding-left: 4px
+}
+label {
+    margin-right: 1.5rem
+}
+p {
+    line-height: 95%; 
+    margin-top: 2rem !important;
+    padding: 0 1.5rem;
+    text-align: center
+}
+.add_gate {
+    display: block !important
+}
+.personal_gate_info {
+    margin-top: 1rem !important
+}
+#sliding_gate2 {
+    margin-top: 1rem
+}
+ 
+.contactTitle {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white
+}
+.logo_container {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 1rem auto 0;
+    background-image: url(../Assests/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.adminButton {
+    display: block;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.contact-btn {
+    margin: 1.2rem 37.5%;
+    width: 25%
+}
+
+.contactForm h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 650;
+    margin-bottom: 1.5rem
+}
+
+form img {
+    width: 125px;
+    height: 90px
+}
+
+.fenceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr))
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 1.5rem
+}
+
+@media (max-width: 768px) {
+
+    .appContainer {
+        padding-top: .5rem
+    }
+
+    .estimate_container {
+        width: 100%;
+        height: 100%
+    }
+    .form-signin {
+        margin-top: 20%;
+        width: 80%
+    }
+    .logo_container {
+        width: 50px;
+        height: 50px
+    }
+    .contactTitle {
+        font-size: 1.2rem
+    }
+    
+   
+}
+    
+    @media (max-width: 425px) {
+        .contactForm, .fenceForm {
+            margin-bottom: 2rem;
+            width: 90%
+        }
+        form {
+            padding: 1rem;
+        }
+    }
+
+    @media (max-width: 320px) {
+        form {
+            padding: .8rem !important
+        }
+    }

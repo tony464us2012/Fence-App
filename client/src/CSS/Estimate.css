@@ -1,0 +1,109 @@
+.estimate-container {
+        width: 100vw;
+        height: 100vh;
+        padding: 1rem;
+        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(../Assests/estimate.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.estimate-title-container {
+    background-color: rgba(240, 234, 218, 0.959);
+    padding: 2.5rem 3rem 1rem;
+    width: 55%;
+    /* height: 65%; */
+    margin: 6rem auto 0;
+    opacity: 1;
+    border-radius: 10px;
+    max-width: 45rem;
+    border: 6px solid black;
+    max-width: 50rem;
+    max-height: 30rem
+
+}
+.estimate-title {
+    text-align: center;
+    color: orange;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px grey;
+    margin-top: -.3rem
+}
+.estimateTitle {
+    margin-top: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px
+}
+.estimate_logo {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 1rem auto 0;
+    background-image: url(../Assests/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.estimate-title-container p {
+    margin-top: 2rem !important
+}
+.estimate-btn {
+    display: inline-block;
+    margin: 2rem 40% 0
+}
+
+@media (max-width: 768px) {
+    .estimate-title-container {
+        padding: 1.5rem 2rem 2rem;
+        width: 75%;
+        height: 70%;
+        margin: 3rem auto 0;
+        opacity: 1;
+        border-radius: 10px;
+        max-width: 45rem;
+        border: 6px solid black;
+        max-width: 50rem;
+        max-height: 30rem
+    }
+    .estimate_logo {
+        width: 40px;
+        height: 40px;
+        margin: .5rem auto 0;
+    }
+    .estimate-title-container p {
+        margin-top: 1rem !important;
+        font-size: .9rem !important
+    }
+    .estimate-btn {
+        display: inline-block;
+        margin: 2rem 11rem 0
+    }
+}
+
+@media (max-width: 425px ) {
+    .estimate-title-container {
+        padding: .8rem;
+        width: 90%;
+        height: 90%;
+        margin: 1rem auto 0;
+    }
+    .estimate_logo {
+        width: 40px;
+        height: 40px;
+        margin: .5rem auto 0;
+    }
+    .estimate-title-container p {
+        margin-top: 1rem !important;
+        font-size: .9rem !important
+    }
+    .estimate-btn {
+        display: inline-block;
+        margin: 2rem 5rem 0
+    }
+}
+    @media (max-width: 320px) {
+        .estimateTitle {
+            font-size: 1.2rem
+        }
+        .estimate-btn {
+            margin: 1rem 3rem 0
+        }
+    }
