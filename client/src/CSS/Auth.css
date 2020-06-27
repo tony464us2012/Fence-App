@@ -53,7 +53,6 @@
     width: 100vw;
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../Assests/setup_chainlink.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -98,6 +97,17 @@
       background-size: contain;
       background-repeat: no-repeat
   }
+
+.success-btn-container {
+  display: flex;
+  align-items: center;
+}
+.success-btn-container a {
+  margin: 2rem auto 0
+}
+.success-title {
+  text-align: center;
+}
 
   @media (max-width: 1024px) {
     #setupForm {
