@@ -60,16 +60,13 @@ const ContactInfo = (props) => {
 
     const onChange = (e) =>{
         setContact({...contact, [e.target.name]: e.target.value});};
-    
-    const styles= {
-      margin: '1rem'
-    }
+
 
     return (
         <div className="appContainer contactContainer">
           <div className="logo_container"></div>
             <h3 className="contactTitle">Free Instant Estimate</h3>
-       <form className="contactForm" onSubmit={onSubmit}  style={styles}>
+       <form className="contactForm" onSubmit={onSubmit}>
          <h4 className="infoTitle">Contact Information</h4>
   <div className="form-row">
     <div className="form-group col-md-6">
