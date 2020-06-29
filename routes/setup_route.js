@@ -72,7 +72,7 @@ router.post('/', async (req, res) => {
         function sendEmail() {
             var mailOptions = {
                 from: 'fencekingsbusiness@gmail.com',
-                to: 'tony464us2011@yahoo.com',
+                to: 'fencekings@gmail.com',
                 subject: 'New Estimate',
                 html: `There is a new estimate of $${quote}. It's ${footage} feet of ${type}, ${height} feet in height. ${personal_gates} personal gates. ${sliding_gate1 !== '' ? 'A '+ sliding_gate1 + ' feet sliding gate.': ''} ${sliding_gate2 !== '' ? 'A '+ sliding_gate2 + ' feet sliding gate.': ''} Name: ${firstName} ${lastName} Email: ${email}. Phone Number: ${phone}. Address: ${address} ${city} ${state} ${zip}`
             }
