@@ -55,40 +55,6 @@ router.post('/', async (req, res) => {
     const newPersonal_Gate = Number(personal_gates);
     let total;
 
-   
-
-    const result = (quote) => {
-
-        let transport = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
-            secure: true,
-            auth: {
-                user: 'fencekingsbusiness@gmail.com',
-                pass: 'jenf nqyo ifda nhqt'
-            }
-        });
-        
-        function sendEmail() {
-            var mailOptions = {
-                from: 'fencekingsbusiness@gmail.com',
-                to: 'fencekings@gmail.com',
-                subject: 'New Estimate',
-                html: `There is a new estimate of $${quote}. It's ${footage} feet of ${type}, ${height} feet in height. ${personal_gates} personal gates. ${sliding_gate1 !== '' ? 'A '+ sliding_gate1 + ' feet sliding gate.': ''} ${sliding_gate2 !== '' ? 'A '+ sliding_gate2 + ' feet sliding gate.': ''} Name: ${firstName} ${lastName} Email: ${email}. Phone Number: ${phone}. Address: ${address} ${city} ${state} ${zip}`
-            }
-            transport.sendMail(mailOptions, function(err, info) {
-                if (err) {
-                    console.log(err)
-                } else {
-                    console.log('Email sent')
-                }
-            })
-        }
-        sendEmail();
-        res.json({estimate: quote})
-
-    }
-
     switch( type ) {
         case 'chainlink': 
         if (height == '4') {
