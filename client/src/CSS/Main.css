@@ -192,7 +192,8 @@ form img {
         }
         .form-group label {
             margin-bottom: -.3rem;
-            padding-left: 5%
+            padding-left: 5%;
+            font-size: 14px
         }
         .form-group input,
         .form-group select {
