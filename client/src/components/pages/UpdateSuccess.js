@@ -5,9 +5,7 @@ const styles= {
     padding: '2rem',
     marginTop: '6rem'
     };
-const styles2= {
-    height: '100vh'
-};
+
 
 
 const UpdateSuccess = (props) => {
@@ -17,12 +15,12 @@ const UpdateSuccess = (props) => {
      };
     
     return (
-        <div className="setupContainer successContainer" >
+        <div className="setupContainer successContainer"  >
             <div className="setup_logo"></div>
             <form id="setupForm" style={styles}>
             <h2 className="success-title">Successfully updated</h2>
             <div className="success-btn-container">
-            <a className="btn btn-light border-dark estimate-btn" onClick={ () => gotoEstimate()}>Go To Estimate</a>
+            <button className="btn btn-light border-dark estimate-btn" onClick={ () => gotoEstimate()}>Go To Estimate</button>
             <a className="btn btn-dark estimate-btn" href="https://myfencekings.com">Home Page</a>
             </div>
             </form>

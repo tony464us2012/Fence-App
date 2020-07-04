@@ -19,7 +19,6 @@ const Main = (props) => {
     });
     const { type, height, footage, personal_gates, sliding_gate1, sliding_gate2 } = estimate;
     const { firstName, lastName, email, phone, address, city, state, zip } = savedContact;
-    // const {} = setupPrices
     
     const customerInfo = {contact: {firstName, lastName, email, phone, address, city, state, zip}, fenceInfo: { type, height, footage, personal_gates, sliding_gate1, sliding_gate2}, prices: {setupPrices}};
     

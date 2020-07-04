@@ -84,7 +84,7 @@ router.post('/', async (req, res) => {
                 }
             })
         }
-        sendEmail();
+        // sendEmail();
         res.json({estimate: quote})
 
     }
