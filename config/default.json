@@ -1,0 +1,4 @@
+{
+    "MONGO_URI": "mongodb+srv://fencekingsbusiness:fence8880@cluster0-acjom.mongodb.net/test?retryWrites=true&w=majority",
+    "TOKEN_SECRET": "LKNAGAOURNAOSFKAVNAASRIHBACUIA"
+        }
