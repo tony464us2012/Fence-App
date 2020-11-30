@@ -1,5 +1,6 @@
 .appContainer {
     width: 100vw;
+    height: 100vh;
     padding: 1rem;
 }
 .contactContainer{
@@ -134,11 +135,11 @@ form img {
     height: 100vh
 }
 
-@media (min-width: 2000px) {
+/* @media (min-width: 2000px) {
     .appContainer {
         height: 100vh
     }
-}
+} */
 
 @media (max-width: 768px) {
 

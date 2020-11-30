@@ -122,7 +122,7 @@ const ContactInfo = (props) => {
       <option >Louisiana</option>
       <option>Maine</option>
       <option >Maryland</option>
-      <option> Mass</option>
+      <option> Massachusetts</option>
       <option >Michigan</option>
       <option >Minnesota</option>
       <option>Mississippi</option>
@@ -145,7 +145,7 @@ const ContactInfo = (props) => {
       <option>South Dakota</option>
       <option>Tennessee</option>
       <option>Texas</option>
-      <option> Uttah</option>
+      <option> Utah</option>
       <option>Vermont</option>
       <option>Virginia</option>
       <option >Washington</option>
