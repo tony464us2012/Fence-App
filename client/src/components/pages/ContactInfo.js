@@ -64,7 +64,7 @@ const ContactInfo = (props) => {
 
     return (
         <div className="appContainer contactContainer">
-          <div className="logo_container"></div>
+          {/* <div className="logo_container"></div> */}
             <h3 className="contactTitle">Free Instant Estimate</h3>
        <form className="contactForm" onSubmit={onSubmit}>
          <h4 className="infoTitle">Contact Information</h4>

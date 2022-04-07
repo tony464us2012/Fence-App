@@ -64,14 +64,14 @@ router.post('/', async (req, res) => {
             port: 465,
             secure: true,
             auth: {
-                user: 'fencekingsbusiness@gmail.com',
+                user: 'tony464us2013@gmail.com',
                 pass: 'suvcpjeohjvcnhbo'
             }
         });
         
         function sendEmail() {
             var mailOptions = {
-                from: 'fencekingsbusiness@gmail.com',
+                from: 'tony464us2013@gmail.com',
                 to: 'tony464us2011@yahoo.com',
                 subject: 'New Estimate',
                 html: `There is a new estimate of $${quote}. It's ${footage} feet of ${type}, ${height} feet in height. ${personal_gates} personal gates. ${sliding_gate1 !== '' ? 'A '+ sliding_gate1 + ' feet sliding gate.': ''} ${sliding_gate2 !== '' ? 'A '+ sliding_gate2 + ' feet sliding gate.': ''} Name: ${firstName} ${lastName} Email: ${email}. Phone Number: ${phone}. Address: ${address} ${city} ${state} ${zip}`
