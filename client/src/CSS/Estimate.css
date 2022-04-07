@@ -1,5 +1,5 @@
 .estimate-container {
-        width: 100vw;
+        height: 100vw;
         padding: 1rem;
         background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(../Assests/estimate.jpg) ;
         background-size: cover;
