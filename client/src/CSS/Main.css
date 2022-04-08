@@ -8,7 +8,6 @@
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("images/bg01.png");
 	background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("images/bg01.png"); */
 	padding-top: 5px;
-	height: 115px;
 	border-bottom: 3px solid orange
 }
 
@@ -33,7 +32,13 @@
 }
 
 .logo-container {
-	padding-right: 1rem
+	padding-right: 1rem;
+   
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
 }
 
 .logo-container h6 {
@@ -189,14 +194,16 @@ p {
     color: white
 }
 .logo_container {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height:50px;
     display: block;
     margin: 1rem auto 0;
     background-image: url(../Assests/logo.png);
     background-size: contain;
     background-repeat: no-repeat
 }
+
+
 .adminButton {
     display: block;
     margin-left: auto;
@@ -258,9 +265,15 @@ form img {
         margin-top: 20%;
         width: 80%
     }
-    .logo_container {
+    .logo-container {
+        padding-top: .8rem
+    }
+    #logo {
         width: 50px;
-        height: 50px
+        height: 50px;
+    }
+    .logo-container h6 {
+        font-size: .8rem
     }
     .contactTitle {
         font-size: 1.2rem
@@ -273,6 +286,9 @@ form img {
         display: flex;
         margin: 0 auto .5rem
     }
+    .contactForm {
+        width: 75%
+    }
     form img {
         width: 125px;
         margin-top: .3rem;
@@ -284,12 +300,43 @@ form img {
 }
     
     @media (max-width: 425px) {
+        #nav {
+            display: block;
+        }
+        #nav img {
+            margin-left: 0
+        }
+        #nav ul {
+            margin-top: 1rem;
+            margin-right: 2rem;
+            text-align: center;
+        }
+        #nav ul li a {
+            padding: 0;
+            font-size: .75rem
+        }
+        .logo-container {
+            display: block;
+            justify-content: center;
+            text-align: center;
+        }
+        .logo-container h6 {
+            text-align: center;
+            font-size: .7rem;
+            margin-top: .2rem
+        }
         .contactForm, .fenceForm {
             margin-bottom: 2rem;
             width: 90%;
             padding: 2rem 1rem 
         }
-
+        .contactTitle {
+            font-size: .9rem
+        }
+        .infoTitle {
+            font-size: 1.1rem;
+            margin-top: .5rem
+        }
         .form-group {
             margin-bottom: -.1rem !important;
 
