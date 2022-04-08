@@ -108,8 +108,8 @@ article h3 {
 
 .appContainer {
     width: 100vw;
-    height: 100vh;
     padding-top: 15%;
+    padding-bottom: 15%;
 }
 .contactContainer{
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(../Assests/fence-72864.jpg) ;
@@ -119,6 +119,12 @@ article h3 {
 }
 h1 {
     text-align: center;
+}
+.typeTitle {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 700
+
 }
 .contactForm {
     background-color: #FBAB7E;
@@ -209,6 +215,7 @@ p {
     margin-left: auto;
     margin-right: 1rem;
     margin-top: 10%;
+    margin-bottom: 5rem;
 }
 
 .contact-btn {
