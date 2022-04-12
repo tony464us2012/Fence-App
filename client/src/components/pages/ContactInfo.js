@@ -159,7 +159,7 @@ const ContactInfo = (props) => {
     </div>
   </div>
   
-  <button type="submit" className="btn btn-success contact-btn">Next</button>
+  <button type="submit" className="btn btn-warning contact-btn" style={{color: 'white', fontWeight: 500}}>Next</button>
 </form>
         <button className="adminButton" onClick={() => adminButton()}>Admin</button>
         </div>

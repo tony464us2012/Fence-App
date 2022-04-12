@@ -112,7 +112,7 @@ article h3 {
     padding-bottom: 15%;
 }
 .contactContainer{
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(../Assests/fence-72864.jpg) ;
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)) ,url(../Assests/fence-72864.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -127,13 +127,19 @@ h1 {
 
 }
 .contactForm {
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-color: #fff;
+    /* background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); */
     padding: 2.5rem 3rem;
     width: 50%;
     margin: 3rem auto 0;
-    border-radius: 10px;
-    max-width: 45rem
+    border-radius: 15px;
+    max-width: 45rem;
+    box-shadow: -10px -10px 50px 10px black
+}
+.infoTitle,
+.typeTitle {
+    color: orange;
+    font-weight: 400 !important
 }
 form h3 {
     text-align: center
@@ -155,7 +161,21 @@ form h6 {
     width: 125px;
     height: 32px
 }
-
+.contact-btn {
+    color: white
+}
+input[type="text"], 
+input[type="email"],
+input[type="phone"],
+input[type="number"],
+#personal_gates,
+#sliding_gate1,
+#sliding_gate2,
+#height,
+#inputState 
+{
+    background-color: rgb(245, 245, 179);
+}
 
 input[type="radio"], 
 input[type="number"] {

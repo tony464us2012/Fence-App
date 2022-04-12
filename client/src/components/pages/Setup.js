@@ -4,6 +4,7 @@ import AuthContext from '../context/auth/authContext'
 import axios from 'axios'
 import Spinner from '../layout/Spinner'
 
+
 const Setup = (props) => {
   
   const setupContext = useContext(SetupContext);
@@ -115,7 +116,7 @@ return (
                <span className="helper-text" data-error="Enter a valid number" data-success="Success"></span>
              </div>
            </div>
-             <h5> Aluminum Picket</h5>
+             <h5>Horizontal</h5>
            <div className="setupGrid">
              <div className="setupGridItem">
                <input type="number" id="aluminumPicket4" name="aluminumPicket4" onChange={onChange} value={prices.aluminumPicket4} />

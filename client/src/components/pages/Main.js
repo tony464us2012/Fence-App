@@ -33,7 +33,7 @@ const Main = (props) => {
     return (
         <div className="appContainer contactContainer">
         <form className="contactForm" onSubmit={onSubmit}>
-                <h5 className="typeTitle">Type Of Fence</h5>
+                <h4 className="typeTitle">Type Of Fence</h4>
                     <div className="fenceGrid">
                         <div className="gridItem">
                             <input type="radio" id="chainlink" name="type" onChange={onChange} value="chainlink" checked={ type === "chainlink" }/> 
@@ -45,7 +45,7 @@ const Main = (props) => {
                         </div>
                         <div className="gridItem">
                             <input type="radio" id="aluminum_picket" name="type" onChange={onChange} value="aluminum_picket" checked={ type ==="aluminum_picket" } /> 
-                            <label htmlFor="aluminum_picket">Aluminum Picket<br/><img src={require('../../Assests/project-main.PNG')} alt="aluminum picket" /></label>
+                            <label htmlFor="aluminum_picket">Horizontal<br/><img src={require('../../Assests/project-main.PNG')} alt="aluminum picket" /></label>
                         </div>
                         <div className="gridItem">
                              <input type="radio" id="wood" name="type" onChange={onChange} value="wood" checked={ type === "wood" } /> 
@@ -92,7 +92,7 @@ const Main = (props) => {
                 }
                 <h6>Total Linear Footage (*Gates Included) </h6>
                 <input type="number" id="footage" name="footage" min="10" max="5000" placeholder="Enter Amount" required onChange={onChange} value={footage}/> Feet {' '}<br/>
-                <h5>Gates</h5>
+                <h4 className="typeTitle">Gates</h4>
                 <h6>Personal Gate(s)</h6>
                 <select id="personal_gates" className="custom-select" name="personal_gates" onChange={onChange}>
                         <option value="0">Add Personal Gate(s)</option>
@@ -119,8 +119,8 @@ const Main = (props) => {
                      </select> : ''
             }
                 <div className="btn-container">
-                    <button className="btn btn-danger previous-btn" onClick={ () => props.history.push('/')}>Previous</button>
-                    <input type="submit" className="btn btn-success" value="Get Quote"/>
+                    <button className="btn btn-danger previous-btn" onClick={ () => props.history.push('/')} style={{fontWeight: 500}}>Previous</button>
+                    <input type="submit" className="btn btn-warning" style={{fontWeight: 500, color: 'white'}} value="Get Quote"/>
                 </div>
             </form>
         </div>
