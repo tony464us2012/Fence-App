@@ -65,11 +65,11 @@ const ContactInfo = (props) => {
     return (
         <div className="appContainer contactContainer">
        <form className="contactForm" onSubmit={onSubmit}>
-         <h4 className="infoTitle">Get A Free Estimate</h4>
+         <h4 className="infoTitle">Instant Estimate</h4>
   <div className="form-row">
     <div className="form-group col-md-6">
       <label htmlFor="firstName">First Name</label>
-      <input type="text" onChange={onChange} name="firstName" className="form-control" id="firstName" value={contact.firstName}  required/>
+      <input type="text" size='sm' onChange={onChange} name="firstName" className="form-control" id="firstName" value={contact.firstName}  required/>
     </div>
     <div className="form-group col-md-6">
       <label htmlFor="lastName">Last Name</label>
@@ -159,7 +159,7 @@ const ContactInfo = (props) => {
     </div>
   </div>
   
-  <button type="submit" className="btn btn-warning contact-btn" style={{color: 'white', fontWeight: 500}}>Next</button>
+  <button type="submit" className="btn btn-success contact-btn" style={{color: 'white', fontWeight: 500}}>Next</button>
 </form>
         <button className="adminButton" onClick={() => adminButton()}>Admin</button>
         </div>

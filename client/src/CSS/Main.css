@@ -102,7 +102,9 @@ header h2,
 .box h3,
 .footer-item h3,
 .fence-item h3,
-article h3 {
+article h3, 
+.infoTitle,
+.typeTitle {
 	font-family: 'Yeseva One', Arial, Helvetica, sans-serif
 }
 
@@ -120,12 +122,6 @@ article h3 {
 h1 {
     text-align: center;
 }
-.typeTitle {
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    font-weight: 700
-
-}
 .contactForm {
     background-color: #fff;
     /* background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); */
@@ -138,7 +134,9 @@ h1 {
 }
 .infoTitle,
 .typeTitle {
-    color: orange;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0 4rem;
     font-weight: 400 !important
 }
 form h3 {
@@ -164,7 +162,7 @@ form h6 {
 .contact-btn {
     color: white
 }
-input[type="text"], 
+/* input[type="text"], 
 input[type="email"],
 input[type="phone"],
 input[type="number"],
@@ -175,7 +173,7 @@ input[type="number"],
 #inputState 
 {
     background-color: rgb(245, 245, 179);
-}
+} */
 
 input[type="radio"], 
 input[type="number"] {

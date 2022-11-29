@@ -37,19 +37,19 @@ const Main = (props) => {
                     <div className="fenceGrid">
                         <div className="gridItem">
                             <input type="radio" id="chainlink" name="type" onChange={onChange} value="chainlink" checked={ type === "chainlink" }/> 
-                            <label htmlFor="chainlink">Chainlink <br/><img src={require('../../Assests/background.jpg')} alt="chainlink fence"/></label>
+                            <label htmlFor="chainlink">Chainlink <br/><img src={require('../../Assests/chain-link.png')} alt="chainlink fence"/></label>
                         </div>
                         <div className="gridItem">
                             <input type="radio" id="picket" name="type" onChange={onChange} value="picket" checked={ type === "picket" } />
-                            <label htmlFor="picket">Picket <br/><img src={require('../../Assests/picket.JPG')} alt="picket fence"/></label>
+                            <label htmlFor="picket">Picket <br/><img src={require('../../Assests/metal.png')} alt="picket fence"/></label>
                         </div>
                         <div className="gridItem">
                             <input type="radio" id="aluminum_picket" name="type" onChange={onChange} value="aluminum_picket" checked={ type ==="aluminum_picket" } /> 
-                            <label htmlFor="aluminum_picket">Horizontal<br/><img src={require('../../Assests/project-main.PNG')} alt="aluminum picket" /></label>
+                            <label htmlFor="aluminum_picket">Horizontal<br/><img src={require('../../Assests/horizontal.jpg')} alt="aluminum picket" /></label>
                         </div>
                         <div className="gridItem">
                              <input type="radio" id="wood" name="type" onChange={onChange} value="wood" checked={ type === "wood" } /> 
-                            <label htmlFor="wood">Wood<br/><img src={require('../../Assests/wood.jpg')} alt="wood fence"/></label>
+                            <label htmlFor="wood">Wood<br/><img src={require('../../Assests/wood.png')} alt="wood fence"/></label>
                         </div>
                         <div className="gridItem">
                             <input type="radio" id="metal" name="type" onChange={onChange} value="metal" checked={ type === "metal" }/>
