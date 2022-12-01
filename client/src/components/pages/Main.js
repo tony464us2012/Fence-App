@@ -53,7 +53,7 @@ const Main = (props) => {
                         </div>
                         <div className="gridItem">
                             <input type="radio" id="metal" name="type" onChange={onChange} value="metal" checked={ type === "metal" }/>
-                            <label htmlFor="metal">Metal<br/><img src={require('../../Assests/Metal2.jpg')} alt="metal fence"/></label>
+                            <label htmlFor="metal">Metal<br/><img src={require('../../Assests/dura.png')} alt="metal fence"/></label>
                         </div>
                         <div className="gridItem">
                             <input type="radio" id="pvc" name="type" onChange={onChange} value="pvc" checked={ type === "pvc" }/> 
@@ -120,7 +120,7 @@ const Main = (props) => {
             }
                 <div className="btn-container">
                     <button className="btn btn-danger previous-btn" onClick={ () => props.history.push('/')} style={{fontWeight: 500}}>Previous</button>
-                    <input type="submit" className="btn btn-warning" style={{fontWeight: 500, color: 'white'}} value="Get Quote"/>
+                    <input type="submit" className="btn btn-success" style={{fontWeight: 500, color: 'white'}} value="Get Quote"/>
                 </div>
             </form>
         </div>
