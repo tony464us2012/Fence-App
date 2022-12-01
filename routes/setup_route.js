@@ -59,6 +59,8 @@ router.post('/', async (req, res) => {
 
     const result = (quote) => {
 
+        
+
         let transport = nodemailer.createTransport({
             host: 'smtp.gmail.com',
             port: 465,
