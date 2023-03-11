@@ -1,16 +1,21 @@
-
-#nav {
-	display: flex;
-	cursor: default;
-	background-color: #333 !important;
-	/* background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("images/bg01.png");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("images/bg01.png");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("images/bg01.png");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("images/bg01.png"); */
-	padding-top: 5px;
-	border-bottom: 3px solid orange
+*{
+    box-sizing: border-box;
 }
 
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0;
+}
+#nav img {
+    margin-left: 4rem;
+}
+
+#logo {
+    width: 70px;
+    height: 70px
+}
 
 .link {
 	background-color: #333
@@ -36,66 +41,31 @@
    
 }
 
-#logo {
-    width: 70px;
-    height: 70px;
-}
-
-.logo-container h6 {
-	color: white;
-	margin-right: -.8rem;
-	text-align: right;
-	font-family: "Frank Ruhl Libre", Arial, Helvetica, sans-serif;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
 .nav-links {
-	margin-top: 1rem
-}
-
-#nav>ul>li {
-	position: relative;
-	display: inline-block;
-	margin-left: 1em;
-}
-
-#nav>ul>li a {
-	color: #c0c0c0;
-	text-decoration: none;
-	border: 0;
-	display: block;
-	padding: 1.5em 0.5em 1.35em 0.5em;
-}
-
-#nav>ul>li:first-child {
-	margin-left: 0;
-}
-
-#nav>ul>li:hover a {
-	color: #fff;
-}
-
-#nav>ul>li.current {
-	font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #eea825;
+    padding: .2rem
 }
 
 
-#nav>ul>li.current a {
-	color: #fff;
+
+.nav-links{
+    list-style: none;
+    margin-bottom: 0;
 }
 
-#nav>ul>li.active a {
-	color: #fff;
+.nav-links li a {
+    color: white;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-#nav>ul>li.active.current:before {
-	opacity: 0;
-}
 
-#nav>ul>li>ul {
-	display: none;
-}
 
 header h2,
 #nav ul li,
@@ -109,16 +79,16 @@ article h3,
 }
 
 .appContainer {
-    width: 100vw;
-    padding-top: 15%;
-    padding-bottom: 15%;
-}
-.contactContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
     background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)) ,url(../Assests/fence-72864.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
+
 h1 {
     text-align: center;
 }
@@ -161,18 +131,6 @@ form h6 {
 .contact-btn {
     color: white
 }
-/* input[type="text"], 
-input[type="email"],
-input[type="phone"],
-input[type="number"],
-#personal_gates,
-#sliding_gate1,
-#sliding_gate2,
-#height,
-#inputState 
-{
-    background-color: rgb(245, 245, 179);
-} */
 
 input[type="radio"], 
 input[type="number"] {
@@ -228,11 +186,9 @@ p {
 
 
 .adminButton {
-    display: block;
-    margin-left: auto;
-    margin-right: 1rem;
-    margin-top: 10%;
-    margin-bottom: 5rem;
+    position: absolute;
+    bottom: 1rem; 
+    right: 1rem
 }
 
 .contact-btn {
@@ -254,7 +210,8 @@ form img {
 
 .fenceGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 0 auto
 }
 .gridItem label {
     font-weight: 600;
@@ -269,11 +226,6 @@ form img {
     height: 100vh
 }
 
-/* @media (min-width: 2000px) {
-    .appContainer {
-        height: 100vh
-    }
-} */
 
 @media (max-width: 768px) {
 
